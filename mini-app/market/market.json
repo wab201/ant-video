@@ -39,6 +39,17 @@
       "description": "Emby 风格的影视浏览器：复用宿主已配置的采集源，支持首页推荐、分类浏览、搜索、详情选集与续播"
     },
     {
+      "appId": "com.wab201.mdzy",
+      "name": "魔都影视",
+    "version": "1.1.0",
+    "versionCode": 2,
+    "url": "https://ghfast.top/https://raw.githubusercontent.com/ant-video/ant-video/refs/heads/main/mini-app/market/zip/魔都影视小程序-v2.zip",
+    "md5": "cb759c235a2ccc336b0e837cfbe4f567",
+    "size": 21810,
+      "author": "wab201",
+    "description": "魔都资源 CMS 客户端与 T4 服务，支持分类、搜索、分页、详情、海报补全、多线路选集和标准播放响应"
+    },
+    {
       "appId": "com.leospring.demo",
       "name": "示例小程序",
       "version": "1.2.0",

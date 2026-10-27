@@ -1,0 +1,10 @@
+{
+  "appId": "com.wab201.mdzy",
+  "name": "魔都影视",
+  "version": "1.1.0",
+  "versionCode": 2,
+  "renderer": "webview",
+  "entry": "index.html",
+  "description": "魔都资源 CMS 客户端与 T4 服务，支持分类、搜索、分页、详情、海报补全、多线路选集和标准播放响应",
+  "permissions": ["network", "storage", "ui", "player", "service"]
+}

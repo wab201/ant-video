@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>魔都影视</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script>
+    window.__antMockPermissions = ["network", "storage", "ui", "player", "service"];
+    window.__antMockAppId = 'com.wab201.mdzy';
+    window.__antMockTV = false;
+    window.__antMockLaunchOptions = null;
+    window.__antMockFixtures = {};
+  </script>
+  <script src="./ant-mock.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-block">
+        <h1>魔都影视</h1>
+        <p id="env" class="env-label">正在连接宿主</p>
+      </div>
+
+      <form id="search-form" class="search-form" role="search">
+        <label class="sr-only" for="search-input">搜索片名</label>
+        <input id="search-input" name="keyword" type="search" placeholder="搜索片名" autocomplete="off" />
+        <button class="primary-button" type="submit">搜索</button>
+      </form>
+    </header>
+
+    <nav id="category-nav" class="category-nav" aria-label="影片分类"></nav>
+
+    <main>
+      <section id="catalog-view" class="view" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="catalog-title">最新内容</h2>
+            <p id="catalog-meta" class="section-meta" aria-live="polite">正在加载</p>
+          </div>
+          <button id="clear-search" class="quiet-button" type="button" data-action="clear-search" hidden>清除搜索</button>
+        </div>
+
+        <div id="catalog-alert" class="alert" role="alert" hidden></div>
+        <div id="catalog-grid" class="poster-grid" aria-live="polite"></div>
+
+        <div id="catalog-loading" class="loading-state" aria-live="polite">
+          <span class="loading-dot" aria-hidden="true"></span>
+          正在读取片库
+        </div>
+
+        <div id="catalog-empty" class="empty-state" hidden>
+          <strong>没有找到内容</strong>
+          <span>可更换分类或搜索其他片名。</span>
+        </div>
+
+        <div id="pagination" class="pagination" hidden>
+          <button type="button" data-action="previous-page">上一页</button>
+          <span id="page-label">第 1 / 1 页</span>
+          <button type="button" data-action="next-page">下一页</button>
+        </div>
+      </section>
+
+      <section id="detail-view" class="view detail-view" aria-labelledby="detail-title" hidden>
+        <button class="back-button" type="button" data-action="back-to-catalog">返回片库</button>
+        <div id="detail-alert" class="alert" role="alert" hidden></div>
+        <div id="detail-loading" class="loading-state">
+          <span class="loading-dot" aria-hidden="true"></span>
+          正在读取详情
+        </div>
+        <div id="detail-content" hidden></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./mock-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
